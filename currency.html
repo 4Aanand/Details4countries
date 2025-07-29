@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Currency Converter</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="currency.css">
+  <script src="currency.js"defer></script>
+</head>
+<body>
+     <header class="header-container">
+    <div class="header-content">
+              <h2 class="title">Details <span>4</span>Counteries</h2>
+<p class="theme-changer"> 
+    <i id="icon"
+    class="fa-regular fa-moon"></i>&nbsp;&nbsp;<span class="theme-label">Dark Mode</span>
+</p>
+    </div>
+   </header> <div class="button-back">
+<span class="back-button" onclick="history.back()"><i class="fa-solid fa-arrow-left"></i>&nbsp;Back</span>
+   </div>
+   <main>     
+  <div class="container">
+    <h1>Currency Converter</h1>
+    <form id="converter-form">
+      <input type="number" id="amount" placeholder="Enter amount" required>
+
+      <div class="dropdowns">
+        <select id="fromCurrency" required></select>
+        <select id="toCurrency" required></select>
+      </div>
+
+      <button type="submit">Convert</button>
+    </form>
+
+    <div id="result" class="result"></div>
+  </div>
+</main>
+</body>
+</html>
