@@ -107,17 +107,14 @@ button:hover {
   color: #0078D4;
 }
 
-@media (max-width:768px){
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-      height: 50vh;
-}
-.title{
-  font-size: 16px;
-}
-.header-content p{
+@media (max-width: 768px) {
+  main {
+    height: 50vh;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .theme-changer {
     font-size: 12px;
-}
+  }
 }
