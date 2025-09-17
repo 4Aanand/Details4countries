@@ -45,14 +45,14 @@ a{
     margin-inline: auto;
 }
 .counteries-container{
-      max-width: 1200px;
-   margin-inline: auto;
+ max-width: 1200px;
     margin-top: 16px;
-    display: flex;
-    gap: 64px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 32px;
+    margin-inline: auto;
 }
+
 .country-card{
     display: inline-block;
 width: 250px;
